@@ -1,0 +1,34 @@
+Web server listening on localhost:3000
+{ user: 'GVOPR3',
+  username: 'GVOPR3000621',
+  full_name: 'GV Operation User 3',
+  profile: 'SHOP_SNR',
+  module: 'GSM',
+  password: '12345' }
+12345
+12345
+false
+::ffff:192.168.2.36 - - [04/Jun/2018:08:12:15 +0000] "POST /api/logins HTTP/1.1" 200 353 "-" "PostmanRuntime/7.1.1"
+::ffff:192.168.2.36 - - [04/Jun/2018:08:12:42 +0000] "GET /api/protected_detail/?barcode=8834000001000 HTTP/1.1" 200 166 "-" "PostmanRuntime/7.1.1"
+GET /protected_things/?barcode=8834000001000 : Connection released
+::ffff:192.168.2.36 - - [04/Jun/2018:08:13:06 +0000] "GET /api/get_Expire_Lists/?uname=thuta&cdate=2018-04-19 HTTP/1.1" 200 596 "-" "PostmanRuntime/7.1.1"
+GET /get_expire_list/?uname=thuta&cdate=2018-04-19 : Connection released
+::ffff:192.168.2.36 - - [04/Jun/2018:08:13:41 +0000] "GET /api/get_Lists/?uname=thuta&cdate=2018-04-03 HTTP/1.1" 200 1223 "-" "PostmanRuntime/7.1.1"
+GET /get_list/?uname=thuta&cdate=2018-04-03 : Connection released
+{ outBinds: undefined,
+  rowsAffected: undefined,
+  metaData: 
+   [ { name: 'USER_ID' },
+     { name: 'GOLD_USR' },
+     { name: 'GSM_USR' },
+     { name: 'MOD' } ],
+  rows: 
+   [ { USER_ID: 1877,
+       GOLD_USR: 'GVOPR3',
+       GSM_USR: 'GVOPR3000621',
+       MOD: 'Expire' } ] }
+::ffff:192.168.2.36 - - [04/Jun/2018:08:14:10 +0000] "GET /api/check_Mod?uname=GVOPR3 HTTP/1.1" 200 78 "-" "PostmanRuntime/7.1.1"
+GET /check_MOD/?uname=GVOPR3: Connection released
+::ffff:192.168.2.36 - - [04/Jun/2018:08:16:55 +0000] "GET /public_things HTTP/1.1" 404 152 "-" "Mozilla/5.0 (Linux; Android 5.1; A07 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+::ffff:192.168.2.36 - - [04/Jun/2018:08:16:55 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://192.168.2.68:3000/public_things" "Mozilla/5.0 (Linux; Android 5.1; A07 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
+::ffff:192.168.2.36 - - [04/Jun/2018:08:17:12 +0000] "GET /api/public_things HTTP/1.1" 200 230508 "-" "Mozilla/5.0 (Linux; Android 5.1; A07 Build/LMY47D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.158 Mobile Safari/537.36"
